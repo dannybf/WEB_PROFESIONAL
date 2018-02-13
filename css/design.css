@@ -1,0 +1,218 @@
+
+/*********************************************************************
+CSS PARA PAGINA WEB RESPONSIVE DESIGN SIGUIENDO EL MÉTODO MOBILE FIRST
+**********************************************************************/
+
+
+body {
+	font size: 16px;
+	font-family: sans-serif;
+	background: purple; /*#233D58*/
+	position: relative;
+}
+
+header {
+	width: 100%;
+	height: 35px;
+	background: #233D58;
+	position: relative;
+}
+
+header h1 {
+	display: none;
+}
+
+header nav {
+	display: none;
+}
+
+header #prev_section,
+header #next_section {
+
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	/*si la imagen desborda su espacio no habrá cambio en el posicionamiento
+	overflow: hidden;
+	Despues de posicionar las imagenes correctamente, ya no necesitamos esto
+	esto es un método de seguridad para poder posicionar las cosas bien al principio
+	*/
+	overflow: hidden;
+	margin: 5px;
+	/*Al añadir un margen de 5px lo next y prev se desplazan 5px 
+	con respecto del body y tambien desplazan al header */
+	/*Con position absolute conseguimos que en cuestion de posicionamiento
+	para los otros elementos estos botones no existan,
+	y ademas se posicionan con respecto al body*/
+	position: absolute;
+	top: 0px;
+}
+
+header #prev_section {
+	/*Posicionamos respecto al lado derecho, el margen del otro
+	elemento no le afecta asi , que para separarlo 5px lo ponemos
+	a 35px del lado derecho*/
+	right: 35px;
+
+}
+
+header #next_section {
+
+	right: 5px;
+}
+
+
+/*Ajustamos las imagenes*/
+header #prev_section img,
+header #next_section img{
+	width: 100%;
+}
+
+
+/*rotamos la flecha prev*/
+header #prev_section img{
+	transform: rotate(180deg);
+}
+
+@media screen and (min-width: 480px) {
+	body {
+		background: red;
+	}
+
+}
+
+/*Tablet pequeña, telefono girado...*/
+@media screen and (min-width: 600px) {
+		body {
+		background: orange;
+	}
+
+	
+}
+
+/*Tamaño standard tablet*/
+@media screen and (min-width: 767px) {
+	body {
+		background: yellow;
+	}
+
+	header {
+		height: 70px;
+	}
+
+
+	header h1{
+		/*El nombre de la pagina esta en linea con los elementos
+		del menu*/
+		display: inline-block;
+		/*Redordemos que le h1 era la imagen del logo y el nombre*/
+		/*Con width 20% conseguimos que el h1 vaya creciendo segun
+		crece el tamaño de pagina*/
+		width: 20%;
+		margin: 0px;
+		/*Cambiamos el tamaño de h1 y le damos margen izquierdo*/
+		height: 50px;
+		margin-left: 50px;
+		/*El tamaño de alto de linea es 70px
+		como el texto no tiene tanto tamaño, se centrara con el header
+		truco para el alineado vertical*/
+		line-height: 70px;
+		/*Por si el 20% se queda muy pequeño al principio
+		le pongo una anchura minima*/
+		min-width: 300px;
+	}
+
+	/*Todo lo que sea hijo de h1*/
+	header h1 > * {
+		/*Para que se pongan en la misma linea*/
+		display:inline-block;
+		/*Con esto alinemos todo en la mitad del header*/
+		vertical-align: middle;
+		/*Quitamos la decoracion y el color del enlace*/
+		text-decoration: none;
+		color: white;
+		/*EL 80% del padre*/
+		font-size:0.75em;
+		/*Margen arriba,abjo->0px y a los lados 3px*/
+		margin: 0px 3px;
+	}
+
+	header h1 figure {
+		height: 40px;
+		width: 40px;
+		margin:0px;
+		margin-right: 20px;
+	}
+
+	/*El figure ya esta como necesitamos pero hay que
+		decirle a la imagen que se ajuste al figure*/
+
+	header h1 figure img {
+		/*Que la imagen se ajuste al figure*/
+		
+		width: 120%;
+		position: relative;
+		top: -16px;
+
+		
+
+	}
+
+	header #prev_section,
+	header #next_section{
+		/*No hace falta ponerlo ya que el padre lo lleva,
+		pero lo ponemos por legibilidad al revisar el codigo*/
+		position: absolute; 
+		width: 50px;
+		height: 50px;
+		background: #29abe2;
+		/*Ya que los dos estaran uno debajo del otro*/
+		right: 40px;
+		/*En el eje z, tendrá un nivel alto
+		es decir, siempre se vera encima de todos los elementos*/
+		z-index: 999;
+		/*Le damos un borde que ocupe el 50% del radio
+		por eso se forma un circulo*/
+		border-radius: 50%;
+	}
+
+
+	header #prev_section{
+		top: 115px;
+
+	}
+
+	header #next_section{
+		top: 190px;
+
+	}
+
+
+	header #prev_section img,
+	header #next_section img{
+	
+		width: 60%;
+		position: relative;
+		top: 10px;
+		
+	}
+	
+	/*Parece ser que la imagen no es completamente simétrica 
+	horizontalmente por eso no podemos posicionarlas a la vez*/
+	header #prev_section img{
+		left: 8px;
+	}
+
+	header #next_section img{
+		left: 10px;
+	}
+
+
+}
+
+
+@media screen and (min-width: 950px) {
+		body {
+		background: green;
+	}	
+}
