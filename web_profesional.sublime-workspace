@@ -4,6 +4,38 @@
 		"selected_items":
 		[
 			[
+				"di",
+				"display"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"r",
+				"r\tright"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"inl",
+				"inline-flex"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"fi",
+				"figure\tTag"
+			],
+			[
 				"box",
 				"box-decoration-break"
 			],
@@ -32,10 +64,6 @@
 				"list-item"
 			],
 			[
-				"mar",
-				"margin-bottom"
-			],
-			[
 				"pagi",
 				"padding"
 			],
@@ -60,10 +88,6 @@
 				"border"
 			],
 			[
-				"inl",
-				"inline"
-			],
-			[
 				"flex",
 				"inline-flex"
 			],
@@ -74,10 +98,6 @@
 			[
 				"inline",
 				"inline-block"
-			],
-			[
-				"margin",
-				"margin-left"
 			],
 			[
 				"tran",
@@ -140,10 +160,23 @@
 	"buffers":
 	[
 		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"es\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<title>Soni Carretero</title>\n\t<script src=\"js/modernizr-custom.js\"></script>\n\t<link rel=\"stylesheet\" href=\"css/normalize.css\">\n\t<link rel=\"stylesheet\" href=\"css/icomoon.css\">\n\n\t<link rel=\"stylesheet\" href=\"css/design.css\">\n</head>\n<body>\n\t<header>\n\t\t<!--EL h1 engloba al logo compuesto por una imagen y un nombre que son links -->\n\t\t<h1>\n\t\t\t<a href=\"index.html\">\n\t\t\t\t<figure><img src=\"img/lion-king.png\"></figure>\n\t\t\t</a>\n\t\t\t<a href=\"index.html\">Sonia Carretero</a>\n\t\t</h1>\n\n\t\t<!--El nav esta compuesto por el boton de menu y la tarjeta menu responsive desing-->\n\t\t<nav id=\"ioMenu\"> <!--IO porque se muestra y desaparece, entra y sale      -->\n\t\t\t<figure id=\"showMenu\" class=\"ioMenuMovil\">\n\t\t\t\t<img src=\"img/menu.png\"></figure>\n\t\t\t<!--Esta es la tarjeta responsive design-->\n\t\t\t<div id=\"card_menu\">\n\t\t\t\t<figure id=\"hideMenu\" class=\"ioMenuMovil\">\n\t\t\t\t<img src=\"img/menuhide.png\"></figure>\n\t\t\t\t<!-- El gato de la tarjeta<figure id=\"logo_menu\"><img src=\"img/logo.png\"></figure>-->\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"#\">Home</a></li>\n\t\t\t\t\t<li><a href=\"#\">Sobre mi</a></li>\n\t\t\t\t\t<li><a href=\"#\">Skills</a></li>\n\t\t\t\t\t<li><a href=\"#\">Portafolio</a></li>\n\t\t\t\t\t<li><a href=\"#\">Blog</a></li>\n\t\t\t\t\t<li><a href=\"#\">Contacto</a></li>\n\t\t\t\t</ul>\n\t\t\t</div>\n\t\t</nav>\n\t<div id=\"prev_section\"><img src=\"img/flecha.png\"></div>\n\t<div id=\"next_section\"><img src=\"img/flecha.png\"></div>\n\t</header>\n\n\n</body>\n</html>",
 			"file": "index.html",
+			"file_size": 1510,
+			"file_write_time": 131629482014365062,
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1450,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/design.css",
+			"settings":
+			{
+				"buffer_size": 4291,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -186,10 +219,14 @@
 	},
 	"expanded_folders":
 	[
-		"/F/WEBS/WEB_PROFESIONAL"
+		"/F/WEBS/WEB_PROFESIONAL",
+		"/F/WEBS/WEB_PROFESIONAL/css"
 	],
 	"file_history":
 	[
+		"/F/WEBS/WEB_PROFESIONAL/css/design.css",
+		"/F/WEBS/WEB_PROFESIONAL/css/desing.css",
+		"/F/WEBS/WEB_PROFESIONAL/css/normalize.css",
 		"/F/WEBS/WEB_PROFESIONAL/index.html",
 		"/C/xampp/htdocs/WEB_PROFESIONAL/css/estilo-prueba.css",
 		"/C/xampp/htdocs/WEB_PROFESIONAL/index.html",
@@ -228,6 +265,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"%;\n",
+			"green",
 			"secci",
 			"seccion",
 			";\n",
@@ -254,29 +293,57 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"file": "index.html",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1450,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1288,
+								1288
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 267.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/design.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								439,
+								439
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -294,7 +361,7 @@
 	},
 	"input":
 	{
-		"height": 39.0
+		"height": 50.0
 	},
 	"layout":
 	{
@@ -365,7 +432,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 212.0,
+	"side_bar_width": 208.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

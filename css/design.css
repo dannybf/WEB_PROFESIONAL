@@ -22,9 +22,96 @@ header h1 {
 	display: none;
 }
 
-header nav {
-	display: none;
+header nav .ioMenuMovil {
+	/*Como la img se adapta al figure
+	al cambiar el figure la imagen se 
+	modifica tambien*/
+	height: 25px;
+	width: 120px;
+	cursor: pointer;
+	/*Para centrarlo*/
+	margin: 0px;
+	/*Por norma general para posicionar
+	usamos top:5px
+	pero como quiero que se mueva y el espacio
+	que se ha movido tambien sea clickqueable
+	modificamos el padding para que se mueva
+	el contenido del figure y no el figure en si
+	consiguiendo que el espacio superior sea clikqueable
+	para que sea mas facil para el usuario seleccionar el menu*/
+	padding-top: 3px;
+	
 }
+
+header nav #card_menu{
+	
+	position: relative;
+	width: 75%;
+	max-width: 350px;
+	background: white;
+	/*Posicionamos*/
+	top: -36.5px;
+	left: 0px;
+	border-right: 3px solid #AFAEAE;
+	/*La tarjeta encima de todo*/
+	z-index: 999;
+	/*Separacion del contenido por debajo
+	para que quede un poco de tarjeta por
+	debajo del menu*/
+	padding-bottom: 50px;
+}
+
+
+header nav .ioMenuMovil img {
+	/*Con esto conseguimos que
+	la img del figure se adapte 100% al figure*/
+	width: 75%;
+}
+
+header nav #logo_menu img {
+	width: 100%;
+}
+
+
+header nav .ioMenuMovil {
+	
+	padding: 0px;
+	width: 20%;
+	max-width: 40px;
+	height: 15%;
+	max-height: 40px;
+	padding-top: 2.5px;
+	
+	margin-left: 9px;
+
+}
+
+header nav #show_menu {
+	
+}
+
+header nav #logo_menu {
+	margin-left: 12%;
+	margin-top: 4px;
+	width: 70%;
+}
+
+
+/*Elementos de la lista*/
+header nav #card_menu ul li {
+	list-style: none;
+	/**/
+	font-size: 1.5em;
+	/*Quiero que una linea este separada de otra*/
+	line-height: 35px;
+}
+
+/*Los enlaces*/
+header nav #card_menu ul li a{
+	text-decoration: none;
+	color: black;
+}
+
 
 header #prev_section,
 header #next_section {
